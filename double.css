@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgba(156, 121, 121, 0.301);
+}
+
+h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fa-heart{
+    color: red;
+}
+
+.loveMe{
+   height: 500px;
+   width: 600px;
+   background: url('./heart.jpg');
+   margin: auto;
+   cursor: pointer;
+   max-width: 100%;
+   position: relative;
+   box-shadow: 0 14px 28px purple;
+   overflow: hidden;
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow .6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow{
+    to{
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
